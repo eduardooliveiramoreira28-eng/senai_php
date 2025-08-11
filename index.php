@@ -5,8 +5,8 @@
     echo "<hr>";
     echo "<center><h2>SENAI - DEVELOPER</h2></center>";
     echo "<hr>";
-    $valor1 = 8;
-    $valor2 = 11;
+    $valor1 = 66;
+    $valor2 = 58;
     echo "A soma dos valores foi:".$valor1+$valor2."<br>";
     echo "A subtração dos valores foi:".$valor1-$valor2."<br>";
     echo "A multiplicação dos valores foi:".$valor1*$valor2."<br>";
@@ -38,4 +38,36 @@
     echo "b é maior que a!";
     }
     echo "<br>saiu do IF";
-    ?>
+    echo "<hr>";
+    $n1 = 3;
+    $n2 = 4;
+    $n3 = 8;
+    if ($n1 > $n2 && $n1 > $n3) {
+    echo "a viriavel ".$n1." é o valormaior";
+    }
+    elseif  ($n2 > $n1 && $n2 > $n3) {
+    echo "a viriavel ".$n2." é o valormaior";
+    }
+    else {
+    echo "a viriavel ".$n3." é o valormaior";
+    }
+    echo "<hr>";
+    echo "<center><h2> NUMEROS RANDOMICOS</h2></center>";
+    $num = rand (1, 10);
+    echo "o numero sorteado foi:".$num;
+    $z = 9;
+    if ($z == $num){
+    echo "você ganhou!";
+    }
+    else
+    echo "você perdeu!";
+    echo "<hr>";
+    for ($i=0; $i <10 ; $i++){
+    echo "passagem do laço for nº:".$i. "<br>";
+    }
+    echo "<h2>tabuada</h2>";
+    $numtab = 5;
+    for ($i=0; $i <10 ; $i++){
+    echo $numtab. "x".$i." = ".$numtab * $i. "<br>";
+    }
+?>
