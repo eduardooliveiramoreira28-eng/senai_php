@@ -43,13 +43,13 @@
     $n2 = 4;
     $n3 = 8;
     if ($n1 > $n2 && $n1 > $n3) {
-    echo "a viriavel ".$n1." é o valormaior";
+    echo "a variavel ".$n1." é o valormaior";
     }
     elseif  ($n2 > $n1 && $n2 > $n3) {
-    echo "a viriavel ".$n2." é o valormaior";
+    echo "a variavel ".$n2." é o valormaior";
     }
     else {
-    echo "a viriavel ".$n3." é o valormaior";
+    echo "a variavel ".$n3." é o valormaior";
     }
     echo "<hr>";
     echo "<center><h2> NUMEROS RANDOMICOS</h2></center>";
@@ -70,4 +70,22 @@
     for ($i=0; $i <10 ; $i++){
     echo $numtab. "x".$i." = ".$numtab * $i. "<br>";
     }
-?>
+    echo "<hr>";
+    echo "<h2>laço while</h2>";
+    $x = 1;
+    while ($x <6){
+    echo "laço nº:".$x."<br>";
+    $x++;
+    }
+    $a = 0;
+    while ($a < 100){
+    echo $a. "<br>";
+    $a+=10;
+    }
+    echo "<hr>";
+    echo "<h2>foreach</h2>";
+    $cores = array ("azul","marrom","bege","amarelo","branco");
+    foreach ($cores as $cor){
+    echo $cor."<br>";
+    }
+    ?>
